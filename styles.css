@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Stylings */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #00ADB5;
+}
+
+h2, p {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p, a {
+    font-size: 2rem;
+}
+
+a {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: #00ADB5;
+    text-decoration: none;
+    color: #EEEEEE;
+    transition: 0.3s;
+}
+
+a:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px #222831;
+    text-shadow: 3px 3px #222831;
+}
+
+/* Hero Section Stylings */
+
+.hero {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #222831;
+    background-image: url(./img/cubes-and-triangles.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    max-width: 30%;
+    border-radius: 50%;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 7rem;
+}
+
+.hero-text h2 {
+    color: #EEEEEE;
+}
+
+/* Resume Section Stylings */
+
+.resume {
+    padding: 5rem;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.resume img {
+    max-width: 70%;
+    margin: 3rem auto;
+}
+
+/* Projects Section Stylings */
+
+.projects {
+    padding: 5rem;
+    background-color: #222831;
+    text-align: center;
+}
+
+.projects p {
+    color: #EEEEEE;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 2.5rem;
+    text-align: left;
+}
+
+.card {
+    flex: 1;
+    max-width: 50rem;
+}
+
+.card h3 {
+    margin-top: 1rem;
+    color: #00ADB5;
+}
+
+.card p {
+    text-align: justify;
+    font-size: 1.5rem;
+    color: #222831;  
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #00ADB5;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #EEEEEE;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px #222831;
+    text-shadow: 2px 2px #222831;
+}
+
+/* About and Contact Section Stylings */
+
+.additional-info {
+    padding: 5rem;
+    background-color: #EEEEEE;
+}
+
+.about-and-contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-and-contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 2rem;
+}
+
+.about-and-contact div img {
+    max-width: 70%;
+}
+
+.about-and-contact div p {
+    text-align: justify;
+}
+
+/* Footer Stylings */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: #222831;
+}
+
+footer a:hover {
+    text-shadow: 3px 3px #00ADB5;
+}
+
+footer i {
+    font-size: 5rem;
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 1199px) {
+
+    /* Global Stylings */
+
+    h1, h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    p, a {
+        font-size: 1.5rem;
+    }
+    
+    a {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 20px 30px;
+        border-radius: 50px;
+        background-color: #00ADB5;
+        text-decoration: none;
+        color: #EEEEEE;
+        transition: 0.3s;
+    }
+
+    /* Hero Section Stylings */
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img { 
+        max-width: 50%;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    /* Projects Section Stylings */
+
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* About and Contact Section Stylings */
+
+    .about-and-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
